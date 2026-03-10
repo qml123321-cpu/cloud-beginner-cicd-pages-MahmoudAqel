@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Cloud CI/CD Beginner Assignment</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <header class="hero">
+      <p class="tag">Cloud Computing</p>
+      <h1>My CI/CD Pipeline Website</h1>
+      <p class="intro">
+        A simple project that shows how GitHub Actions can automate deployment to GitHub Pages.
+      </p>
+    </header>
+
+    <section class="info-row">
+      <div class="info-card">
+        <h3>Student</h3>
+        <p>Mahmoud Aqel</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Course</h3>
+        <p>Cloud Computing</p>
+      </div>
+
+      <div class="info-card">
+        <h3>Platform</h3>
+        <p>GitHub Actions + Pages</p>
+      </div>
+    </section>
+
+    <section class="content-grid">
+      <div class="box">
+        <h2>What is CI/CD?</h2>
+        <p>
+          CI/CD is a process used to automate software development tasks.
+          Continuous Integration checks code changes after developers push updates.
+          Continuous Delivery and Deployment help move these updates to a live environment faster.
+          In cloud systems, this makes deployment easier, quicker, and more reliable.
+        </p>
+      </div>
+
+      <div class="box">
+        <h2>My Pipeline</h2>
+        <p>
+          When I push my files to the main branch, GitHub Actions starts automatically.
+          The workflow checks that the main website files exist, uploads the project files,
+          and deploys the website to GitHub Pages. After that, the updated site becomes available online.
+        </p>
+      </div>
+    </section>
+
+    <section class="timeline-section">
+      <h2>Workflow Steps</h2>
+
+      <div class="timeline">
+        <div class="step">
+          <div class="circle">1</div>
+          <div class="step-text">
+            <h4>Push</h4>
+            <p>I upload code changes to the main branch.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="circle">2</div>
+          <div class="step-text">
+            <h4>Check</h4>
+            <p>GitHub Actions checks if the required files exist.</p>
+          </div>
+        </div>
+
+        <div class="step">
+          <div class="circle">3</div>
+          <div class="step-text">
+            <h4>Deploy</h4>
+            <p>The site is published automatically to GitHub Pages.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="action-box">
+      <button id="btn">Check deployment message</button>
+      <p id="msg"></p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
